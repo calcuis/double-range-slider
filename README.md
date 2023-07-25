@@ -15,13 +15,13 @@ const [minVal, setMinVal] = useState(min);
 const [maxVal, setMaxVal] = useState(max);
 ```
 
-Here, three states are declared using the useState hook from React. `avg`, `minVal`, and `maxVal` are the state variables, and `setAvg`, `setMinVal`, and `setMaxVal` are the functions to update these state variables. `avg` is initialized with the average of min and max, which would be (0 + 99) / 2 = 49.5. `minVal` is initialized with the value of min, which is 0. `maxVal` is initialized with the value of max, which is 99.
+Here, three states are declared using the `useState` hook. `avg`, `minVal`, and `maxVal` are the state variables, and `setAvg`, `setMinVal`, and `setMaxVal` are the functions to update these state variables. `avg` is initialized with the average of min and max, which would be (0 + 99) / 2 = 49.5. `minVal` is initialized with the value of min, which is 0. `maxVal` is initialized with the value of max, which is 99.
 
 ```
 var thumbsize = 10;
 ```
 
-A variable `thumbsize` is declared and initialized with a value of 10. It likely represents the size (width) of the slider's thumb or handle.
+A variable `thumbsize` is declared and initialized with a value of 10. It represents the size (width) of the slider's thumb or handle.
 
 ```
 const width = 200;
