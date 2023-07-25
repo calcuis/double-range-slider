@@ -121,11 +121,11 @@ The first input element represents the left thumb (min thumb) of the range slide
 
 `min={min}`: Sets the minimum value of the range slider to 0 (since min is 0).
 
-`max={avg}`: Sets the maximum value of the range slider to the avg value calculated in the TypeScript code (initially set to 49.5).
+`max={avg}`: Sets the maximum value of the range slider to the avg value calculated in the TypeScript code.
 
-`value={minVal}`: Binds the value of the input to the minVal state variable from the useState hook.
+`value={minVal}`: Binds the value of the input to the `minVal` state variable from the `useState` hook.
 
-`onChange={e => setMinVal(+e.target.value)}`: When the user interacts with the slider and changes its value, this onChange handler updates the minVal state with the new value. The + before e.target.value is used to convert the string value to a number.
+`onChange={e => setMinVal(+e.target.value)}`: When the user interacts with the slider and changes its value, this `onChange` handler updates the `minVal` state with the new value. The `+` before `e.target.value` is used to convert the string value to a number.
 
 The second input element represents the right thumb (max thumb) of the range slider. It has similar attributes, but with some differences:
 
@@ -137,13 +137,13 @@ The second input element represents the right thumb (max thumb) of the range sli
 
 `style={styles.max}`: This sets the inline CSS styles for the right thumb based on the styles object defined earlier.
 
-`min={avg}`: Sets the minimum value of the range slider to the avg value calculated in the TypeScript code (initially set to 49.5).
+`min={avg}`: Sets the minimum value of the range slider to the avg value calculated in the TypeScript code.
 
 `max={max}`: Sets the maximum value of the range slider to 99 (since max is 99).
 
-`value={maxVal}`: Binds the value of the input to the maxVal state variable from the useState hook.
+`value={maxVal}`: Binds the value of the input to the `maxVal` state variable from the `useState` hook.
 
-`onChange={e => setMaxVal(+e.target.value)}`: When the user interacts with the slider and changes its value, this onChange handler updates the maxVal state with the new value. The + before e.target.value is used to convert the string value to a number.
+`onChange={e => setMaxVal(+e.target.value)}`: When the user interacts with the slider and changes its value, this `onChange` handler updates the `maxVal` state with the new value. The `+` before `e.target.value` is used to convert the string value to a number.
 
 ### summary
 This component creates a visually appealing range slider with two draggable thumbs that allow users to select a range of values between a certain range (0 and 99 in this example). The component's appearance and behavior are controlled by the `styles` object and the state variables `minVal` and `maxVal`. The `useEffect` hook ensures that the `avg` state remains up-to-date based on the selected `minVal` and `maxVal`.
